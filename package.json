@@ -1,12 +1,12 @@
 {
-  "scripts": {
-    "vercel-build": "vercel"
-  },
-  "vercel": {
-    "functions": {
-      "api/**/*.js": {
-        "runtime": "python3.9"
-      }
+    "scripts": {
+        "vercel-build": "vercel"
+    },
+    "vercel": {
+        "functions": {
+            "api/**/*.js": {
+                "runtime": "python3.9"
+            }
+        }
     }
-  }
 }
