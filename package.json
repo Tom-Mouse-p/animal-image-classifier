@@ -1,0 +1,11 @@
+"scripts": {
+  "vercel-build": "vercel",
+  "vercel": {
+    "functions": {
+      "api/**/*.js": {
+        "runtime": "python3.9"  // Specify your desired Python runtime here
+      }
+    }
+  },
+  // ... other scripts
+}
