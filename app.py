@@ -5,7 +5,7 @@ from keras.models import load_model
 import numpy as np
 from PIL import Image
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static', static_url_path='/static')
 model = load_model("model/ResNet152V2.h5")
 
 # Define a dictionary to map class indices to class names
@@ -43,7 +43,7 @@ def predict():
     # Use the dictionary to get the class name
     predicted_class_name = class_names.get(predicted_class_index[0], "Unknown Class")
 
-    return render_template('index.html', prediction=f'Predicted Class: {predicted_class_name}')
+    return render_template('index.html', prediction=f' : {predicted_class_name}' )
 
 if __name__ == '__main__':
     app.run(port=3000, debug=True)
