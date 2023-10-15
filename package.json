@@ -1,12 +1,8 @@
 {
+    "name": "your-app-name",
+    "version": "1.0.0",
+    "main": "app.py",
     "scripts": {
         "vercel-build": "vercel"
-    },
-    "vercel": {
-        "functions": {
-            "api/**/*.js": {
-                "runtime": "python3.9"
-            }
-        }
     }
 }
