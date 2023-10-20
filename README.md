@@ -1,6 +1,6 @@
-# Image Classifier
+# Animal Image Classifier
 
-This project showcases an example of utilising Flask to serve a simple webpage that interacts with an existing Keras model for image classification.
+This is an user-friendly website that harnesses the power of machine learning technologies to identify and predict the animal present in any image provided by the user. With a simple and intuitive interface, it allows users to upload images of animals from their device and instantly receive accurate name of the species within the image.
 
 ## Prerequisites
 
@@ -22,7 +22,3 @@ python app.py
 
 2. Open your web browser and visit `http://localhost:3000`
 3. Select an image and click on the `Predict Image` button
-
-## Licence
-
-This project is licensed under the MIT Licence.
