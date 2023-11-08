@@ -17,11 +17,18 @@ class_names = {
     # Add more class mappings as needed
 }
 
+
 @app.route('/', methods=['GET'])
 def hello_world():
+    return render_template('main.html', )
+
+
+@app.route('/predict', methods=['GET'])
+def predict_page():
     return render_template('index.html')
 
-@app.route('/', methods=['POST'])
+
+@app.route('/predict', methods=['POST'])
 def predict():
     imagefile = request.files['imagefile']
     image_path = "./images/" + imagefile.filename
